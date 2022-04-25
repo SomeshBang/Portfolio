@@ -1,4 +1,3 @@
-# Portfolio
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,6 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -41,10 +39,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
             <!-- <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li> -->
-            <li class="nav-item navright"><a class="nav-link" href="#about">About Me</a></li>
-            <li class="nav-item navright"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item navright"><a class="nav-link" href="#project">Project</a></li>
-            <li class="nav-item navright"><a class="nav-link" href="#contact">Contact Me</a></li>
+            <li class="nav-item navright"><a class="nav-link navhover" href="#about" style="color: #fbff00;">About Me</a></li>
+            <li class="nav-item navright"><a class="nav-link navhover" href="#skills" style="color: #fbff00;">Skills</a></li>
+            <li class="nav-item navright"><a class="nav-link navhover" href="#project" style="color: #fbff00;">Project</a></li>
+            <li class="nav-item navright"><a class="nav-link navhover" href="#contact" style="color: #fbff00;">Contact</a></li>
+            <li class="nav-item navright"><a class="nav-link navhover" href="#" style="color: #fbff00;">Resume</a></li>
+            <li> 
+                <input type="checkbox" id="darklight" class="themebtn" onclick="themeChange ()">
+                <label for=darklight class="dlthemebtn"></label>
+            </li>
             </ul>
         </div>
     </nav>
@@ -64,11 +67,62 @@
 
 
 
+
+
+
+
     <!-- About Part -->
-    <section class="hero" id="about">
+    <section class="" id="">
+        <h1 class="lne">About Me</h1>
+        <img class="myimg" src="assets/img/myimg.jpg">
+        <p>
+        <ul class="details namelne">
+            <li><i class="fa-solid fa-angles-right fa-beat fa-sm facss" style="--fa-animation-duration: 1.0s; "></i> Name: Somesh Bang</li>
+            <li><i class="fa-solid fa-angles-right fa-beat fa-sm facss" style="--fa-animation-duration: 1.0s; "></i> Email: bangsomesh060801@gmail.com</li>
+            <li><i class="fa-solid fa-angles-right fa-beat fa-sm facss" style="--fa-animation-duration: 1.0s; "></i> Phone No: +91 7972558842</li>
+            <li><i class="fa-solid fa-angles-right fa-beat fa-sm facss" style="--fa-animation-duration: 1.0s; "></i> Degree: BCA (Bachelor of Computer Applications.)</li>
+            <li><i class="fa-solid fa-angles-right fa-beat fa-sm facss" style="--fa-animation-duration: 1.0s; "></i> College: Zulal Bhilajirao Patil College affiliated to the <u>North Maharashtra University</u></li>
+            <li><i class="fa-solid fa-angles-right fa-beat fa-sm facss" style="--fa-animation-duration: 1.0s; "></i> City: Dhule,Maharashtra.</li>
+        </ul>
+        </p>
+
+    </section>
+    <!-- About Part End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <section class="" id="">
         <!-- <img src="assets/img/cover.jpg" alt="jane-doe" loading="lazy" class="hero-img"/> -->
         <div class="">
-            <h2 class="">About Me</h2>
+            <h2 class="">X Me</h2>
             <p class="">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
             dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
@@ -146,15 +200,6 @@
             </p>
         </div>
     </section>
-    <!-- About Part End -->
-
-
-
-
-
-
-
-
 
 
 
@@ -194,15 +239,13 @@
             </ul>
         </div>
 
-
-
-
         <br>
         <hr style="border: 1px solid black; margin-top: 40px;">
         <div class="copyright">
-            <p style="margin-bottom: 0rem;">Copyright © 2022 <a href="#">SomeshBang</a>. All Rights Reserved</p>
+            <p style="margin-bottom: 0rem;">Copyright © 2022 <a href="#">SomeshBang</a>.  All Rights Reserved
+                <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" style="height: 25px; margin-left: 5px;">
+            </p>
         </div>
-
 
         </div>
     </section>
@@ -231,6 +274,7 @@
     <!-- MY SCRIPT -->
     <script src="assets/js/app.js"></script>
 
+    <!-- Icon Script -->
     <script src="https://kit.fontawesome.com/8e26b4230d.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Scripts -->
