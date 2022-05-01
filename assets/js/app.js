@@ -65,3 +65,32 @@ function themeChange() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+// -------------------------------------------------------------------------
+// Back to Top
+
+//Get the button
+let myUpBtn = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollUpFunction();
+};
+
+function scrollUpFunction() {
+  if (
+    document.body.scrollTop > 1000 ||
+    document.documentElement.scrollTop > 1000
+  ) {
+    myUpBtn.style.display = "block";
+  } else {
+    myUpBtn.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+myUpBtn.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
