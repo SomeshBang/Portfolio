@@ -483,6 +483,99 @@ nav {
   border-radius: 17px;
   border: black;
 }
+/* ----------------------------------------- */
+/* Certificate */
+
+.cefcard-container {
+	overflow-x: scroll;
+	display: flex;
+	padding: 3rem;
+}
+
+.card_cef {
+	min-width: 280px;
+	height: 420px;
+	border-radius: 16px;
+	background-color: #cc8bfc;
+	box-shadow: -1rem 0 2rem #000000b0;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	transition: 0.2s;
+}
+
+.cef_img{
+  width: 16rem;
+  height: 10rem;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem 0 1rem;
+}
+
+.card_cef .article-title {
+  font-family: 'Dongle', sans-serif;
+	margin-top: 0.5rem;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.card_cef .article-header {
+  margin-top: 0.3rem;
+	margin-bottom: auto;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+  display: grid;
+  color: #5e5e5e;
+  font-size: 19px;
+}
+
+.cef-id{
+  font-size: 12px;
+  margin-top: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.cef_btn1{
+	text-align: center;
+	border-width: 5rem;
+	border: solid 2px #000;
+	border-radius: 2rem;
+	width: 8rem;
+}
+
+.cef_btn2{
+	margin-top:0.5rem;
+	text-align: center;
+	border-width: 5rem;
+	border: solid 2px #000;
+	border-radius: 2rem;
+	width: 12rem;
+  color: #002bff;
+}
+
+
+.card_cef:not(:first-child) {
+	margin-left: -110px;
+}
+
+.card_cef:hover {
+	transform: translateY(-1rem);
+}
+
+.card_cef:hover~.card_cef{
+	transform: translateX(110px);
+}
+
+
+
 
 
 
@@ -567,6 +660,131 @@ nav {
   font-size: 15px;
   font-weight: bolder;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hiringbox{
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -51px;
+  top: 27rem;
+  width: 155px;
+  z-index: 1100;
+}
+
+.hbox{
+  list-style-type: none;
+  background-color: #004eff8c;
+  color: #000000;
+  height: 45px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.txt_resm{
+  font-family: 'Dongle', sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 3px #ffffff;
+  font-size: 35px;
+  margin-left: 0.5rem;
+}
+
+.resm_fix{
+  position: fixed;
+  font-size: 20px;
+  white-space: nowrap;
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+  border: solid 2px black;
+  border-radius: 15px;
+  width: 8rem;
+  height: 1.9rem;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+/* 
+.hbox p{
+  margin-left: 0.5rem;
+  font-family: 'Dongle', sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 1px 3px #ffffff;
+  font-size: 40px;
+}
+
+.hbox a{
+  position: fixed;
+  float: right;
+  margin-left: 1rem;
+  width: 5rem;
+  height: 2rem;
+}*/
+
+.hbox:hover{
+  margin-left:-150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* back to to button */

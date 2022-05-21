@@ -1,5 +1,3 @@
-alert("The website is under Construction");
-
 // Typing effect
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -69,12 +67,14 @@ function themeChange() {
 // -------------------------------------------------------------------------
 // Back to Top
 
-//Get the button
-let myUpBtn = document.getElementById("btn-back-to-top");
+
+let myUpBtn = document.getElementById("btn-back-to-top");   //Get the button
+let hiring_btn = document.getElementById("hbox_id");    //Hiring Btn
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollUpFunction();
+  right_resume();
 };
 
 function scrollUpFunction() {
@@ -87,6 +87,19 @@ function scrollUpFunction() {
     myUpBtn.style.display = "none";
   }
 }
+
+function right_resume() {
+  if (
+    document.body.scrollTop > 2000 ||
+    document.documentElement.scrollTop > 2000
+  ) {
+    hiring_btn.style.display = "block";
+  } else {
+    hiring_btn.style.display = "none";
+  }
+}
+
+
 // When the user clicks on the button, scroll to the top of the document
 myUpBtn.addEventListener("click", backToTop);
 

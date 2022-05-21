@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- MY CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -104,10 +101,7 @@
                             <span style="font-size: 1.0rem;">SSVPS's Dr. P. R. Ghogrey Science College,Dhule.</span><span style="font-size: 1.0rem; float: right;">Chavara English Medium High School,Dhule.</span><br>
                             <span style="font-size: 0.8rem; font-style: italic;">07/2017 - 05/2019</span><span style="font-size: 0.8rem; font-style: italic; float: right;">07/2007 - 05/2017</span><br>
                             <span style="font-size: 0.8rem; font-style: italic;"> Grade = 52.31%</span><span style="font-size: 0.8rem; font-style: italic; float: right;"> Grade = 67.20%</span><br>
-                            
-                            
                             <br>
-                            
                         </p>
                     </div>
                     </div>
@@ -131,7 +125,7 @@
                         <h5 class="card-title cdtitle"><i class="fa-brands fa-python fa-xl"></i> Python 3</h5>
                         <p class="card-text cddesc">
                             Django | Tkinter | PyTorch | Django | MongoDB | Pandas | BeautifulSoup | Numpy | OpenCV | Matplotlib | Sqlite3 | 
-                            Math | Web2py | Regular Expression(regex) | TensorFlow | Jupyter Notebook | PIP
+                            Math | Web2py | Regular Expression(regex) | TensorFlow | Jupyter Notebook | Google colabs | PIP
                         </p>
                     </div>
                     </div>
@@ -285,51 +279,112 @@
         <!-- Project End -->
 
         <!-- Certificate -->
-
         <section id=" " style="margin-top:5vw;">
             <h1 class="lne"> Certification </h1>
-        </section>
 
+            <div class="cefcard-container">
 
+                    <div class="card_cef">
+                        <img src="assets/img/cef_goog.JPG" class="cef_img">
+                        <header class="article-header">
+                            <h2 class="article-title">
+                                Fundamentals of Digital Marketing
+                            </h2>
+                            <div class="caption"> 
+                                - by Google
+                            </div>
+                        </header>
+                        <div class="cef-id"> 
+                            ID - 598 8N5 SYC
+                        </div>
+                        <a href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code" class="cef_btn2">Check Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                    <div class="card_cef">
+                        <img src="assets/img/cef_lp.JPG" class="cef_img">
+                        <header class="article-header">
+                            <h2 class="article-title">
+                                Learning Python
+                            </h2>
+                            <div class="caption"> 
+                                -by Linkedin
+                            </div>
+                        </header>
+                        <div class="cef-id"> 
+                            ID - ATS6Z5oEvb8yB7HTx7gtC8EnxV0s
+                        </div>
+                        <a href=" " class="cef_btn2">Check Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                    <div class="card_cef">
+                        <img src="assets/img/cef_guvip.JPG" class="cef_img">
+                        <header class="article-header">
+                            <h2 class="article-title">
+                                Python
+                            </h2>
+                            <div class="caption"> 
+                                -by GUVI
+                            </div>
+                        </header>
+                        <a href="https://www.guvi.in/verify-certificate?id=2m8SI10R3J1b42826Z" class="cef_btn2">Check Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                    <div class="card_cef">
+                        <img src="assets/img/cef_tcsce.JPG" class="cef_img">
+                        <header class="article-header">
+                            <h2 class="article-title">
+                                Career Edge - Young Professional
+                            </h2>
+                            <div class="caption"> 
+                                - by TCS iON
+                            </div>
+                        </header>
+                        <div class="cef-id"> 
+                            ID - 119854-16662498-1016
+                        </div>
+                        <a href="https://learning.tcsionhub.in/LX/ecertificate/verification" class="cef_btn2">Check Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                    <div class="card_cef">
+                        <img src="assets/img/cef_cpfe.JPG" class="cef_img">
+                        <header class="article-header">
+                            <h2 class="article-title">
+                                Python for Everybody
+                            </h2>
+                            <div class="caption"> 
+                                -by Coursera (University of Michigan)
+                            </div>
+                        </header>
+                        <a href="coursera.org/verify/specialization/RYZEFETRCKKB" class="cef_btn2">Check Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                    <div class="card_cef">
+                        <img src="assets/img/cef_dbpy.JPG" class="cef_img">
+                        <header class="article-header">
+                            <h2 class="article-title">
+                                Using Databases with Python
+                            </h2>
+                            <div class="caption"> 
+                                -by Coursera (University of Michigan)
+                            </div>
+                        </header>
+                        <a href="coursera.org/verify/J5FSYGWUPPVM" class="cef_btn2">Check Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                    <div class="card_cef">
+                        <img src="assets/img/cef_dspy.JPG" class="cef_img">
+                        <header class="article-header">
+                            <h2 class="article-title">
+                                Python Data Structures
+                            </h2>
+                            <div class="caption"> 
+                                -by Coursera (University of Michigan)
+                            </div>
+                        </header>
+                        <a href="coursera.org/verify/R75RPBGNBCEU" class="cef_btn2">View Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
 
+                </div>
+            </section>
+    <!-- Certificate End -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <!-- Contact Me -->
     <section id="contact">
-        <div class="container-fluid bgcontact" style="border-bottom: solid; margin-top:25vw;">
+        <div class="container-fluid bgcontact" style="border-bottom: solid;">
             <h2 class="contactcls">Connect...!</h2>
             <!-- margintop -->
 
@@ -351,11 +406,18 @@
                 <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" style="height: 25px; margin-left: 5px;">
             </p>
         </div>
-
         </div>
     </section>
     <!-- Contact Me End -->
+    </div>
 
+    <!-- Hiring Button -->
+    <div class="hiringbox">
+        <div class="hbox" id="hbox_id">
+            <label class="txt_resm">Hiring...?
+                <a href="assets/Somesh Resume.pdf" class="resm_fix" download>Resume / CV <i class="fa-solid fa-download fa-xs"></i></a>
+            </label> 
+        </div>
     </div>
 
 
@@ -364,15 +426,11 @@
         <i class="fa-solid fa-arrow-up fa-xl fa-bounce"></i>
     </button>
 
-
     <!-- MY SCRIPT -->
     <script src="assets/js/app.js"></script>
-
     <!-- Icon Script -->
     <script src="https://kit.fontawesome.com/8e26b4230d.js" crossorigin="anonymous"></script>
-
     <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 </body>
 </html>
