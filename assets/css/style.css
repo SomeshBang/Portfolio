@@ -574,54 +574,6 @@ nav {
 	transform: translateX(110px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Contact */
 
 .bgcontact{
@@ -661,24 +613,7 @@ nav {
   font-weight: bolder;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* hiring resume box */
 .hiringbox{
   padding: 0px;
   margin: 0px;
@@ -723,69 +658,9 @@ nav {
   background-color: antiquewhite;
 }
 
-/* 
-.hbox p{
-  margin-left: 0.5rem;
-  font-family: 'Dongle', sans-serif;
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 1px 3px #ffffff;
-  font-size: 40px;
-}
-
-.hbox a{
-  position: fixed;
-  float: right;
-  margin-left: 1rem;
-  width: 5rem;
-  height: 2rem;
-}*/
-
 .hbox:hover{
   margin-left:-150px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* back to to button */
 #btn-back-to-top {
