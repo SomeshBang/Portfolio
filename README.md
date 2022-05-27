@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- MY CSS -->
-    <link rel="stylesheet" href="assets/css/t.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Portfolio</title>
 </head>
@@ -434,7 +434,7 @@
 
 
     <!-- MY SCRIPT -->
-    <script src="assets/js/t.js"></script>
+    <script src="assets/js/app.js"></script>
 
     <!-- Icon Script -->
     <script src="https://kit.fontawesome.com/8e26b4230d.js" crossorigin="anonymous"></script>
