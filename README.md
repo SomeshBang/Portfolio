@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <title>Portfolio</title>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +19,7 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Portfolio</title>
+    
 </head>
 
 <body class="bodyDesign">
