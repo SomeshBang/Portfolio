@@ -1,11 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 /* Navbar Title */
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 /* Navbar Other Title */
@@ -22,8 +15,6 @@
 
 /* Copyright */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-
-
 
 /* Scrollbar */
 html {
@@ -497,24 +488,6 @@ a{
 	transform: translateX(110px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1000px){
   .marginLeft{
     margin-left: 0%;
@@ -640,43 +613,6 @@ a{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Contact */
 
 .bgcontact{
