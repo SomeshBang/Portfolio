@@ -1,4 +1,11 @@
 alert("Website under connstruction !!!");
+// For changing Theme
+function themeChange() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+// -------------------------------------------------------------------------
+
 // Typing effect
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -42,7 +49,7 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
+  var elements = document.getElementsByClassName('typeWrite');
   for (var i=0; i<elements.length; i++) {
       var toRotate = elements[i].getAttribute('data-type');
       var period = elements[i].getAttribute('data-period');
@@ -53,19 +60,11 @@ window.onload = function() {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  css.innerHTML = ".typeWrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
 
-
 // -------------------------------------------------------------------------------
-// For changing Theme
-function themeChange() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
-// -------------------------------------------------------------------------
 // Back to Top
 
 
