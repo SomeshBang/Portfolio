@@ -1,26 +1,45 @@
-/* Navbar */
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-/* Name */
+/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-/* Headlines */
-/* @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Orelega+One&display=swap'); */
-/* All Other Text */
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
 
+/* Navbar Title */
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+/* Navbar Other Title */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/* Typewriter */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+/* Headings */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+/* Used  in about me */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Copyright */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+
+/* Scrollbar */
 html {
   scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
-
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: #313131;
@@ -30,141 +49,98 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 0, 0); 
 }
-/* ------------------------------------ */
 
-/* CSS for tags */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Body Decoration */
+.bodyDesign{
+  background-image: linear-gradient(to bottom right,#00e9ff78, #cc00ff73,#0800ff73);
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-body {
-  font-family: var(--font-family);
-}
-/* ----------------------------------- */
-
-/* Navigation Bar */
-.navcls{
+/* Background Image */
+.backgroundImage
+{
   width:100%;
   height:100vh;
   /* background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80); */
   /* background: url(N:\\\Vscode\\Portfolio\\Portfolio\\assets\\img\\covernew.jpg); */
-  background: url(../img/covernew.jpg);
+  background: url(../img/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative; 
-  
+  background-position:center;
 }
 
-.navbar-nav{
-  margin-right: 5vw;
+/* Navbar */
+.navbg{
+  background-color: #0000007d;
+  z-index: 100;
 }
 
-.navbar-nav .nav-link{
-  padding-left: 45px;
-  margin-left: 10px;
-  margin-right: 20px;
-
+.navbar-brand{
+  font-size: 2.25rem;
 }
 
-/* Portfolio */
-nav {
-  height: 60px;
-  font-family: 'Courgette', cursive;
-  position: sticky;
-  left: 0;
-  background: rgba(0, 0, 0, 0.2);
+.navTitle{
   color: #5100f5;
+  font-family: 'Macondo', cursive;
+  font-style: italic;
+  font-size: 2.7rem;
+  font-weight: 900;
+  padding-left: 55px;
   text-shadow: 1px 1px #000000;
 }
 
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 3vw;
-  line-height: inherit;
-  white-space: nowrap;
-  margin-left: 80px;
-  font-weight: bold;
+/* Navbar Button */
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
 }
 
-/* Remanning name of navbar */
-.navright{
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-/* bootstrap menu button */
-.menubutton{
-  border-color: white;
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-toggler{
-  font-size: 0.8rem;
-  line-height: 1;
+/* Other title of navbar */
+.marginLeft{
+  margin-left: -15%;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 20 px;
-  height: 1px;
-  background-color: white;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-/* Navbar name Animationn */
-.navhover{
-  color: inherit;
-  text-decoration: none;
+.nav-link{
+  color: rgb(238, 255, 0);
+  font-family: 'Patrick Hand', cursive;
+  font-style: italic;
+  font-size: 1.5rem;
   position: relative;
-  padding: 16px 0;
-  margin: 0 12px;
-  letter-spacing: 1px;
-  line-height: 16px;
-  font-weight: 700;
-  transition: color 9000.1s, background-color 0.1s, padding 0.2s ease-in;
-  color: #fbff00;
 }
 
-.navhover::before{
+.nav-link:hover{
+  color: rgb(0, 255, 51);
+}
+
+.nav-item{
+  padding-left: 1.0rem;
+}
+
+.nav-link::before{
+  background-color: #15ff00;
+  bottom: 3px;
   content: "";
   display: block;
-  position: absolute;
-  bottom: 3px;
-  left:0;
   height: 3px;
-  width: 100%;
-  background-color: #15ff00;
+  left:0;
+  position: absolute;
   transform-origin: right top;
   transform: scale(0,1);
   transition: color 0.1s, transform 0.2s ease-out;
+  width: 100%;
 }
 
-.navhover:hover::before,
-.navhover:focus::before{
+.nav-link:hover::before,
+.nav-link:focus::before{
   transform-origin: left top;
   transform: scale(1,1);
 }
-/* -------------------------------- */
 
-/* Theme Change Button */
-
+/* Theme changer */
 #darklight{
   display: none;
 }
@@ -173,7 +149,7 @@ nav {
   display: inline-block;
   width: 63px;
   height: 27px;
-  background-color: rgb(255 250 104 / 28%);
+  background-color: rgba(246, 246, 246, 0.28);
   border-radius: 30px;
   position: relative;
   cursor: pointer;
@@ -204,63 +180,51 @@ nav {
   transform: translateX(35px) rotate(360deg);
 }
 
+/* Called by javascript to change theme */
 .dark-mode {
   background-color: black;
   color: white;
 }
 
-/* -------------------------------- */
-/* Main Background Gradient */
-
-.mainbackground{
-  /* background: -webkit-linear-gradient(133deg, hsla(185, 100%, 68%, 1) 0%, hsla(305, 100%, 68%, 1) 50%, hsla(242, 100%, 70%, 1) 100%); */
-  /* background-image: linear-gradient(to bottom right, #00e9ff82, #ff00e98f,#0800ff8a); */
-  background-image: linear-gradient(to bottom right,#00e9ff78, #cc00ff73,#0800ff73);
-}
-
-/* ----------------------------------- */
-
-/* MYSELF */
-/* Somesh Bang */
-.formatetxt{
-  font-family: 'Pacifico', cursive;
-  font-size: 6vw;
-  position: absolute;
+/* My Name */
+.formateTxt{
   color: #ff016b;
-  top: 17vw;
-  margin-left: 8vw;
+  font-family: 'Pacifico', cursive;
+  font-size: 6rem;
+  position: absolute;
+  margin-left: 5vw;
+  top: 35vh;
   text-shadow: 0px 2px #ffffff;
 }
 
-/* Iam */
-.xtypewrite{
-  font-family: 'Dongle', sans-serif;
-  font-size: 3vw;
+.preTypewrite{
   color: #00fff3;
+  font-family: 'Dongle', sans-serif;
+  font-size: 2.6rem;
   position: absolute;
-  top: 24vw;
-  margin-left: 16vw;
+  padding-top: 0.1em;
+  padding-left: 2.5em;
+  text-shadow: 0px 0px #ffffff;
 }
 
 /* Developer,trader.....etc */
-.typewrite{
-  font-family: 'Dongle', sans-serif;
-  font-size: 3vw;
+.typeWrite{
   color: #00fff3;
+  font-family: 'Dongle', sans-serif;
+  font-size: 2.6rem;
   position: absolute;
-  top: 24vw;
-  margin-left: 20vw;
+  padding-top: 0.1em;
+  padding-left: 4em;
+  text-shadow: 0px 0px #ffffff;
 }
-
-/* --------------------------------------- */
 
 /* headings */
 .lne {
+  font-family: 'Dongle', sans-serif;
+  font-size:4rem;
   overflow: hidden;
   text-align: center;
-  margin-top: 15px;
-  font-family: 'Dongle', sans-serif;
-  font-size:60px;
+  margin-top: 5vh;
 }
 .lne:before,
 .lne:after {
@@ -280,27 +244,20 @@ nav {
   left: 0.2em;
   margin-right: -50%;
 }
-/* ----------------------------- */
 
 /* MyImage */
 .myimg{
-  height: 19vw;
-  width: 15vw;
   float: left;
-  margin-right: 45px;
-  margin-left: 6vw;
-  margin-top: -9px;
   border-radius: 25px;
   box-shadow: -11px 11px 4px -1px #00000052;
+  margin-left: 6vw;
+  width: 13rem;
+  height: 19vw;
+  display: block;
 }
 
-.details{
-  font-family: 'Rubik', sans-serif;
-  font-size: 18px;
-  margin-top: -11vw;
-  padding-right: 20vw;
-  line-height: 27px;
-  float: right;
+.myDesc{
+  padding-left: 20rem;
 }
 
 .facss{
@@ -308,18 +265,13 @@ nav {
   padding-right: 7px;
 }
 
-/* Descreption */
-.mydesc{
-  float: right;
-  font-family: 'Rubik', sans-serif;
-  font-size: 17px;
-  margin-top: -19vw;
-  margin-left: 24vw;
-  line-height: 26px;
+.listStyling{
+  list-style-type: none;
+  padding-left: 22rem;
+  font-weight: 500;
 }
 
 /* Education Card */
-
 .flip-card {
   height: 15vw;
   perspective: 1000px;
@@ -369,20 +321,35 @@ nav {
   text-align: left;
 }
 
+.educdescBack{
+  font-family: 'Rubik', sans-serif;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+}
+
 .edu{
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 2;
 }
 
-/* -------------------------------------- */
-/* Skills */
-
-/* bootstrap marign manipulated */
-.row{
-  margin-right: -13px;
+.clgName{
+  font-size: 1.0rem;
 }
 
+.fontAdjBack{
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.lineAdj{
+  line-height: 3rem;
+}
+
+/* Skills */
 .cardbg{
   background: #ffb0db;
   border-radius: 3px;
@@ -441,50 +408,6 @@ nav {
   line-height: 1.7rem;
   font-size: 1.0rem;
 }
-/* -------------------------------------------- */
-/* Project */
-
-.projbox {
-  position: relative;
-  font-family: Arial;
-}
-
-.text-box {
-  position: absolute;
-  bottom: 0rem;
-  right: 3rem;
-  background-color: #000000a6;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 6.9rem;
-  width: 31.9rem;
-  border-radius: 6px;
-}
-
-.projimg{
-  height: 18rem;
-  width: 32rem;
-  border-radius: 10px;
-}
-
-.projname{
-  font-family: 'Fredoka One', cursive;
-  margin-top: 0.3rem;
-  margin-left: 1rem;
-
-}
-
-.projdesc{
-  font-family: 'Rubik', sans-serif;
-}
-
-.btnupgrade{
-  border-radius: 17px;
-  border: black;
-}
-/* ----------------------------------------- */
-/* Certificate */
 
 .cefcard-container {
 	overflow-x: scroll;
@@ -574,16 +497,195 @@ nav {
 	transform: translateX(110px);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+  .marginLeft{
+    margin-left: 0%;
+  }
+
+  .formateTxt{
+    color: #ff016b;
+    font-size: 5rem;
+    top: 30vh;
+    text-shadow: 0px 2px #ffffff;
+  }
+
+  .preTypewrite{
+    font-size: 2.6rem;
+    position: absolute;
+    padding-top: 0.3em;
+    padding-left: 1.0em;
+    text-shadow: 0px 0px #ffffff;
+  }
+  
+  .typeWrite{
+    font-size: 2.6rem;
+    position: absolute;
+    padding-top: 0.3em;
+    padding-left: 2.4em;
+    text-shadow: 0px 0px #ffffff;
+  }
+
+  .myimg{
+    height: 40vw;
+    float: none;
+    border-radius: 80px; 
+    width: 40vw;
+    margin: auto;
+    display: block;
+  }
+
+  .myDesc{
+    padding-left: 0rem;
+  }
+
+  .listStyling{
+    list-style-type: none;
+    padding-left: 0rem;
+  }  
+
+  .flip-card {
+    height: 55vw;
+  }
+
+  .edu {
+    font-size: 1rem;
+}
+
+  .educdescBack{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .clgName{
+    font-size: 0.8rem;
+    display: table-caption;
+  }
+
+  .clgStyle{
+    font-size: 0.8rem;
+  }
+
+  .clgDate{
+    font-size: 0.7rem;
+  }
+
+  .clgGrade{
+    font-size: 0.7rem;
+    font-style: italic;
+    float: right;
+    margin-top: -15px;
+  }
+
+  .cn2{
+    margin-top: -6em;
+    width: min-content;
+  }
+
+  .fontAdjBack{
+    font-size: 0.5rem;
+  }
+
+  .lineAdj{
+    line-height: 0rem;
+  }
+
+  .cdeffect {
+    width: 310px;
+    height: 205px;
+    left: 10px;
+  }
+
+  .cardbg {
+    top: 2px;
+    left: 2px;
+    width: 304px;
+    height: 199px
+  }
+
+  .cdtitle {
+    font-size: 1.3rem;
+  }
+  
+  .cddesc {
+    line-height: 1.4rem;
+    }
+
+    .crdHeight{
+      margin-top: 1rem!important;
+    }
+
+    .alignicon{
+    font-size:2.5vw;
+    white-space: nowrap;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Contact */
 
 .bgcontact{
-  background: hsla(278, 100%, 47%, 1);
-	background: -webkit-linear-gradient(177deg, hsla(278, 100%, 47%, 1) 0%, hsla(314, 100%, 49%, 1) 38%, hsla(337, 100%, 76%, 1) 53%, hsla(260, 100%, 42%, 1) 100%);
+	background: -webkit-linear-gradient(100deg, hsla(278, 100%, 47%, 1) 0%, hsla(314, 100%, 49%, 1) 38%, hsla(337, 100%, 76%, 1) 53%, hsla(260, 100%, 42%, 1) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9900F0", endColorstr="#F900BF", GradientType=1 );
 }
 
 .contactcls{
-  margin-left: 40vw;
+  text-align: center;
   padding-top: 10px;
   font-family: 'Dongle', sans-serif;
   font-size:60px;  
@@ -591,15 +693,17 @@ nav {
   text-shadow:4px 3px #000000;
 }
 
+#icon a{
+  color: #000000;
+}
+
 .alignicon{
-  margin-left: 33vw;
-  margin-top: 10px;
-  line-height: 2.5em; 
-  
+  line-height: 2.5em;
+  text-align: center; 
 }
 
 .product {
-  -webkit-box-reflect: below -10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+  -webkit-box-reflect: below -5px linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 40%));
 }
 
 .growicon:hover{
@@ -607,13 +711,11 @@ nav {
 }
 
 .copyright{
-  margin-left: 36vw;
   font-family: 'Bree Serif', serif;
   font-size: 15px;
   font-weight: bolder;
 }
 
-/* hiring resume box */
 .hiringbox{
   padding: 0px;
   margin: 0px;
@@ -634,6 +736,10 @@ nav {
   transition: all 0.25s ease-in-out;
   cursor: pointer;
   border-radius: 15px;
+}
+
+#hbox_id {
+  display: none;
 }
 
 .txt_resm{
@@ -678,4 +784,5 @@ nav {
   margin-bottom: 4vw;
   margin-right: 2vw;
   box-shadow: 0px 7px 4px #00000057;
+  z-index: 100;
 }
