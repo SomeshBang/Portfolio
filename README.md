@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Icon -->
@@ -14,7 +14,6 @@
 
     <title>Portfolio</title>
 </head>
-
 
 <body class="bodyDesign">
 
@@ -56,6 +55,7 @@
                         </div>
                     </div>
                 </nav>
+                <!-- My name and Auto typing -->
                 <div>
                     <h1 class="formateTxt">Somesh Bang <br><span class="preTypewrite">I'am</span><span href=""
                             class="typeWrite " data-period="2000"
@@ -112,26 +112,29 @@
                             </h3>
                             <p class="card-text educdesc">
                                 <span class="edu">BCA (Bachelor of Computer Applications)</span><br>
-                                <span class="clgStyle" style="font-size: 1.0rem;">Zulal Bhilajirao Patil College,
-                                    affiliated to KBC North Maharashtra University, Dhule.</span><br>
-                                <span class="clgDate" style="font-size: 0.8rem; font-style: italic;">07/2019 -
-                                    06/2022</span><br>
-                                <span class="clgGrade" style="font-size: 0.8rem; font-style: italic;"> Grade = 9.00
-                                    CGPA</span>
+                                <span class="clgStyle">Zulal Bhilajirao Patil College, affiliated to KBC North
+                                    Maharashtra University, Dhule.<br>
+                                    <label class="clgDG">07/2019 - 06/2022</label><br>
+                                    <label class="clgDG">Grade = 9.00 CGPA</label>
+                                </span>
                             </p>
                         </div>
+                        <!-- Backside of education card -->
                         <div class="flip-card-back">
                             <p class="card-text educdescBack">
-                                <span class="edu">HSC Board - Science</span> <span class="edu" style="float: right;">SSC
-                                    Board - Science</span><br>
-                                <span class="clgName">SSVPS's Dr. P. R. Ghogrey Science College,Dhule.</span>
-                                <span class="clgName cn2" style="float: right;">Chavara English Medium High
-                                    School,Dhule.</span><br>
-                                <span class="fontAdjBack lineAdj">07/2017 - 05/2019</span>
-                                <span class="fontAdjBack lineAdj" style="float: right;">07/2007 - 05/2017</span><br>
-                                <span class="fontAdjBack"> Grade = 52.31%</span>
-                                <span class="fontAdjBack" style="float: right;"> Grade = 67.20%</span><br>
-                                <br>
+                                <span class="edu" style="text-align: left;">HSC Board - Science</span>
+                                <span class="edu" style="float: right; text-align: right">SSC Board - Science
+                                </span><br>
+                                <span class="clgName" style="text-align: left;">SSVPS's Dr. P. R. Ghogrey Science
+                                    College,Dhule.<br>
+                                    <label class="yrsAdj" style="text-align: left;">07/2017 - 05/2019<br>Grade = 52.31%
+                                    </label>
+                                </span>
+                                <span class="clgName cn2 schlAdj">Chavara English Medium High School,Dhule.<br>
+                                    <label class="yrsAdj" style="float: right; text-align: right;">07/2007 -
+                                        05/2017<br>Grade = 62.20
+                                    </label>
+                                </span>
                             </p>
                         </div>
                     </div>
@@ -141,10 +144,10 @@
     </section>
     <!-- ---------------About Me End---------------------- -->
 
+
     <!-- Skills  -->
     <section id="skills" style="margin-top:5vw;">
         <h1 class="lne"> Skills </h1>
-
         <div class="container">
             <div class="row" style="margin:auto;">
                 <div class="col-sm-4 mt-2 crdHeight">
@@ -221,7 +224,7 @@
                             <h5 class="card-title cdtitle">
                                 <i class="fa-solid fa-database fa-lg"></i>
                                 Other Skills
-                                <img src="https://img.icons8.com/material-outlined/45/000000/mysql-logo.png" />
+                                <i class="fa-brands fa-linux fa-lg"></i>
                             </h5>
                             <p class="card-text cddesc">
                                 MySql | Sql | SQlite | Kali Linux | Parrot OS | Windows 7,8,9,10 | VS Code | Atom |
@@ -236,17 +239,116 @@
     </section>
     <!-- -----------------skills ends------------ -->
 
+
     <!-- Project -->
     <section id="project">
         <h1 class="lne"> My Work </h1>
 
+        <div class="container">
+            <div class="row" style="margin: auto;">
+
+                <div class="card mb-3 mt-3 cardLeft" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/1.png" class="img-fluid rounded-start imgProj">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title projName">Money Control Stock Research </h5>
+                                <hr style="height: 2px; color: rgb(0, 0, 0); opacity: 100%; margin: 8px 0px;">
+                                <p class="card-text projDetails">Python | BeautifulSoup | Tkinter | Sorting Algorithm </p>
+                                <label class="viewSrc"><a id="projA" href="https://github.com/SomeshBang/Python_Project/tree/main/Moneycontrol%20Research%20Report">View Source <i class="fa-brands fa-github fa-xl"></i></a></label>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-3 cardRight" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/2.png" class="img-fluid rounded-start imgProj">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title projName">Restaurant Counter </h5>
+                                <hr style="height: 2px; color: rgb(0, 0, 0); opacity: 100%; margin: 8px 0px;">
+                                <p class="card-text projDetails">Python | Math | Tkinter </p>
+                                <label class="viewSrc"><a id="projA" href="https://github.com/SomeshBang/Python_Project/tree/main/Restaurant%20Counter%20using%20python">View Source <i class="fa-brands fa-github fa-xl"></i></a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-3 cardLeft" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/3.png" class="img-fluid rounded-start imgProj">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title projName">Image Viewer App </h5>
+                                <hr style="height: 2px; color: rgb(0, 0, 0); opacity: 100%; margin: 8px 0px;">
+                                <p class="card-text projDetails">Python | ImageTK | Tkinter </p>
+                                <label class="viewSrc"><a id="projA" href="https://github.com/SomeshBang/Python_Project/tree/main/Image%20Viewer%20Using%20Tkinter">View Source <i class="fa-brands fa-github fa-xl"></i></a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-3 cardRight" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/4.png" class="img-fluid rounded-start imgProj">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title projName">Libarary Management </h5>
+                                <hr style="height: 2px; color: rgb(0, 0, 0); opacity: 100%; margin: 8px 0px;">
+                                <p class="card-text projDetails">PHP | CSS | MySql | JavaScript</p>
+                                <label class="viewSrc"><a id="projA" href="https://github.com/SomeshBang/College_Project">View Source <i class="fa-brands fa-github fa-xl"></i></a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-3 cardLeft" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/5.png" class="img-fluid rounded-start imgProj">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title projName">Portfolio Website </h5>
+                                <hr style="height: 2px; color: rgb(0, 0, 0); opacity: 100%; margin: 8px 0px;">
+                                <p class="card-text projDetails">HTML | CSS | JavaScript </p>
+                                <label class="viewSrc"><a id="projA" href="https://github.com/SomeshBang/Portfolio">View Source <i class="fa-brands fa-github fa-xl"></i></a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 mt-3 cardRight" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/6.png" class="img-fluid rounded-start imgProj">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title projName">More Project on Github</h5>
+                                <hr style="height: 2px; color: rgb(0, 0, 0); opacity: 100%; margin: 8px 0px;">
+                                <p class="card-text projDetails">Take a look on my other work </p>
+                                <label class="viewSrc"><a id="projA" href="https://github.com/SomeshBang">View Source <i class="fa-brands fa-github fa-xl"></i></a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </section>
     <!-- ---------------Project ends-------------------- -->
+
 
     <!-- Certification -->
     <section id="">
         <h1 class="lne"> Certification </h1>
-
         <div class="cefcard-container">
             <div class="card_cef">
                 <img src="assets/img/cef_goog.JPG" class="cef_img">
@@ -262,7 +364,7 @@
                     ID - 598 8N5 SYC
                 </div>
                 <a href="https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code"
-                    class="cef_btn2">Check Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    class="cef_btn2">View Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
             </div>
             <div class="card_cef">
                 <img src="assets/img/cef_lp.JPG" class="cef_img">
@@ -277,7 +379,7 @@
                 <div class="cef-id">
                     ID - ATS6Z5oEvb8yB7HTx7gtC8EnxV0s
                 </div>
-                <a href=" " class="cef_btn2">Check Certificate <i
+                <a href=" " class="cef_btn2">View Certificate <i
                         class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
             </div>
             <div class="card_cef">
@@ -290,7 +392,7 @@
                         -by GUVI
                     </div>
                 </header>
-                <a href="https://www.guvi.in/verify-certificate?id=2m8SI10R3J1b42826Z" class="cef_btn2">Check
+                <a href="https://www.guvi.in/verify-certificate?id=2m8SI10R3J1b42826Z" class="cef_btn2">View
                     Certificate <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
             </div>
             <div class="card_cef">
@@ -306,7 +408,7 @@
                 <div class="cef-id">
                     ID - 119854-16662498-1016
                 </div>
-                <a href="https://learning.tcsionhub.in/LX/ecertificate/verification" class="cef_btn2">Check Certificate
+                <a href="https://learning.tcsionhub.in/LX/ecertificate/verification" class="cef_btn2">View Certificate
                     <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
             </div>
             <div class="card_cef">
@@ -319,7 +421,7 @@
                         -by Coursera (University of Michigan)
                     </div>
                 </header>
-                <a href="coursera.org/verify/specialization/RYZEFETRCKKB" class="cef_btn2">Check Certificate <i
+                <a href="coursera.org/verify/specialization/RYZEFETRCKKB" class="cef_btn2">View Certificate <i
                         class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
             </div>
             <div class="card_cef">
@@ -332,7 +434,7 @@
                         -by Coursera (University of Michigan)
                     </div>
                 </header>
-                <a href="coursera.org/verify/J5FSYGWUPPVM" class="cef_btn2">Check Certificate <i
+                <a href="coursera.org/verify/J5FSYGWUPPVM" class="cef_btn2">View Certificate <i
                         class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
             </div>
             <div class="card_cef">
@@ -349,17 +451,26 @@
                         class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
             </div>
         </div>
-
     </section>
     <!-- -------------------Certification ends------------------ -->
 
+
+    <!-- Hiring in Mobile mode  -->
+    <div class="hiringMob">
+        <h1>Hiring....?</h1>
+        <a href="assets/Somesh Resume.pdf" download>
+            <label class="resmBtnMob">Resume / CV
+                <i class="fa-solid fa-download fa-xs"></i>
+            </label>
+        </a>
+    </div>
+    <!-- ------------------------------------------------------- -->
+
+
     <!-- Contact Me -->
     <section id="contactme">
-
         <div class="container-fluid bgcontact" style="border-bottom: solid;">
             <h2 class="contactcls">Connect...!</h2>
-            <!-- margintop -->
-
             <div class="alignicon" id="icon">
                 <ul class="product" style="padding-left: 0rem;">
                     <a style="margin-right: 10px; margin-left: 10px;" href="https://github.com/SomeshBang"><i
@@ -376,19 +487,20 @@
                             class="fa-solid fa-envelope fa-3x growicon"></i></a>
                 </ul>
             </div>
-
+            <!-- Line and footer part -->
             <br>
             <hr style="border: 1px solid black; margin-top: 40px;">
             <div class="copyright">
-                <p style="margin-bottom: 0rem; text-align: center; ">Copyright © 2022 <a href="https://someshbang.github.io/Portfolio/" style="color: #efff00;">SomeshBang</a>. All Rights Reserved
-                    <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-                        style="height: 25px;">
+                <p style="margin-bottom: 0rem; text-align: center; ">Copyright © 2022 <a
+                        href="https://someshbang.github.io/Portfolio/" style="color: #efff00;">SomeshBang</a>. All Rights Reserved
+                    <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" style="height: 25px;">
                 </p>
             </div>
         </div>
         </div>
     </section>
     <!-- ---------------Contact ends--------------- -->
+
 
     <!-- Hiring Button -->
     <div class="hiringbox">
@@ -399,46 +511,22 @@
             </label>
         </div>
     </div>
+    <!-- --------------- -->
 
-        <!-- Back to top Button -->
-        <button type="upbtn" id="btn-back-to-top">
-            <i class="fa-solid fa-arrow-up fa-xl fa-bounce"></i>
-        </button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id=""></section>
-
-
-
-
-
-
-
-
-
-
+    <!-- Back to top Button -->
+    <button type="upbtn" id="btn-back-to-top">
+        <i class="fa-solid fa-arrow-up fa-xl fa-bounce"></i>
+    </button>
+    <!-- ------------------------------------------------------- -->
 
     <!-- MY SCRIPT -->
     <script src="assets/js/app.js"></script>
-
     <!-- Icon Script -->
     <script src="https://kit.fontawesome.com/8e26b4230d.js" crossorigin="anonymous"></script>
-
     <!-- Bootstrap Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
+<!-- +++++++++++++++ Created on May 2022 by Somesh Bang {responsive website by HTML CSS JAVASCRIPT }+++++++++++++++++++++ -->
