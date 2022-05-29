@@ -1,4 +1,3 @@
-alert("Website under connstruction !!!");
 // For changing Theme
 function themeChange() {
   var element = document.body;
@@ -65,8 +64,9 @@ window.onload = function() {
 };
 
 // -------------------------------------------------------------------------------
-// Back to Top
 
+
+// Back to Top and Hiring box 
 
 let myUpBtn = document.getElementById("btn-back-to-top");   //Get the button
 let hiring_btn = document.getElementById("hbox_id");    //Hiring Btn
@@ -99,7 +99,6 @@ function right_resume() {
   }
 }
 
-
 // When the user clicks on the button, scroll to the top of the document
 myUpBtn.addEventListener("click", backToTop);
 
@@ -107,3 +106,4 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+//----------------------------------------------------------------------------------------------------

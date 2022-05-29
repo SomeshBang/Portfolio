@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 /* Navbar Title */
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 /* Navbar Other Title */
@@ -7,25 +6,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
 /* Headings */
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
-
 /* Used  in about me */
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 /* Copyright */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+/* ----------------------------------------------------------------- */
+
+/* Scrollbar */
+
+
+/* Changing a tag property*/
+a {
+  text-decoration: none;
+}
 
 /* Scrollbar */
 html {
   scroll-behavior: smooth;
 }
 
-a{
-  text-decoration: none;
-}
-
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -38,40 +40,41 @@ a{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 0, 0); 
+  background: rgb(0, 0, 0);
 }
 
-/* Body Decoration */
-.bodyDesign{
-  background-image: linear-gradient(to bottom right,#00e9ff78, #cc00ff73,#0800ff73);
+/* Body background Decoration */
+.bodyDesign {
+  background-image: linear-gradient(to bottom right, #00e9ff78, #cc00ff73, #0800ff73);
 }
 
 /* Background Image */
-.backgroundImage
-{
-  width:100%;
-  height:100vh;
+.backgroundImage {
+  width: 100%;
+  height: 100vh;
   /* background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80); */
   /* background: url(N:\\\Vscode\\Portfolio\\Portfolio\\assets\\img\\covernew.jpg); */
   background: url(../img/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative; 
-  background-position:center;
+  position: relative;
+  background-position: center;
 }
 
+/* ---------------------------------------------------- */
+
 /* Navbar */
-.navbg{
+.navbg {
   background-color: #0000007d;
   z-index: 100;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 2.25rem;
 }
 
-.navTitle{
+.navTitle {
   color: #5100f5;
   font-family: 'Macondo', cursive;
   font-style: italic;
@@ -91,11 +94,11 @@ a{
 }
 
 /* Other title of navbar */
-.marginLeft{
+.marginLeft {
   margin-left: -15%;
 }
 
-.nav-link{
+.nav-link {
   color: rgb(238, 255, 0);
   font-family: 'Patrick Hand', cursive;
   font-style: italic;
@@ -103,69 +106,69 @@ a{
   position: relative;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: rgb(0, 255, 51);
 }
 
-.nav-item{
+.nav-item {
   padding-left: 1.0rem;
 }
 
-.nav-link::before{
+.nav-link::before {
   background-color: #15ff00;
   bottom: 3px;
   content: "";
   display: block;
   height: 3px;
-  left:0;
+  left: 0;
   position: absolute;
   transform-origin: right top;
-  transform: scale(0,1);
+  transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;
   width: 100%;
 }
 
 .nav-link:hover::before,
-.nav-link:focus::before{
+.nav-link:focus::before {
   transform-origin: left top;
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 
 /* Theme changer */
-#darklight{
+#darklight {
   display: none;
 }
 
-.dlthemebtn{
-  display: inline-block;
-  width: 63px;
-  height: 27px;
-  background-color: rgba(246, 246, 246, 0.28);
+.dlthemebtn {
   border-radius: 30px;
-  position: relative;
+  background-color: rgb(246 246 246 / 58%);
   cursor: pointer;
+  display: inline-block;
   float: none;
+  height: 27px;
   margin-top: 12px;
+  position: relative;
+  width: 63px;
 }
 
-.dlthemebtn::after{
-  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAADQUlEQVRIiaWWzW9UZRSHn3Pn3hmhtSZWcNEZYhSTJhU1LQpxYWGh0YUL1v0HTDChuGen2yIk8A/gyo3GnauGxBg6beNHrBrUjdMEDbRS6Izz9b4/F/fOnbkzF2jhLCa595zze855P84d2Kdp9ciL+80J9gWolufx+lPV8vwTQ7Q2F2ltLsq8u3F0AgWfxU+2pG+fezrj35gpDuf0zHIhK5WrwAfAErKfMT8Ndg54aSDsD9BlFPyG6RhwHvG1naydHdYL8xvUP2BlYAlTtpb+41Gwy7E/sYC/89TyIbJCqivgvqAhaCmBiG7d8BLRyyFWHMjLsZE90RcUMM4AsegdDzuCZgKIxSiUhKvD7nKbTs31HGekUc3MC23MFHmhfBV4hZagDrQFTsN5WMGIDhrhuNH4vktn0wO8SrVyRRszxUwsgFbL7+ODBdApYAoBdz3UBd28BUiK6kJrS3R3hGt5Jt4tYSUANsGug67Zido3cSfepkELwBQAuwLHQwEAFsZlFg7GwOZPnZ6rDFpANp0ul52oXQQuptku2eg9mAWGRQYG3Tt+0LVkJ/+6lEIS4U+I649/M/EPMZ8UY+Ca9A5HF6dPeyEpxN7a3AZtIaC9N305kBLhpCjFuVux3hBEK1OTYJMY8Ynag7lm0kxy+szobfykvis/OwLB7AIQX6ZS7rTJdiFwyb75RiLWzwsJ7UIGopXKx8jOpQpjj4Z0doQ8yIOrx2sVHsqMn0XdOLLY78T0C7LPgRoA4wZhPkge2v8K3wIEnW2PBBYZB15Ph3ANdA3TrzA0hbUxU2T33iXgQ9rALZeOEnXBNYVrxEslLzrbwreFGYy9USScMjCuEBw+b8fX00szUq5EwGrlB8Qx3ROdmw7v6cM6ovsf+HrSQWiMzUYxAH7kzdqsWfYCjAwzMzyerwBswoheC1EAnbue5i1H67bH1T1ByShVAp55r9gDAPpyGAAPGvUm12vSIjhwvB+mlrAHnT6Re/bzv/Gyw0AN2SKBvYP4CPgdGATcxDgb+20RqIE9n1tzLmM57tBO90eklg+NM/bUdcQssE6jecpO395N/WtzEffXNZjzWKZqeV4rFalaefuJhB4Jeoz/Xf8D+ZhvZAkTU4AAAAAASUVORK5CYII=");
-  width: 26px;
-  height: 25px;
+.dlthemebtn::after {
   background-color: rgb(255, 0, 0);
-  border: #fff;
   border-radius: 50%;
+  border: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAADQUlEQVRIiaWWzW9UZRSHn3Pn3hmhtSZWcNEZYhSTJhU1LQpxYWGh0YUL1v0HTDChuGen2yIk8A/gyo3GnauGxBg6beNHrBrUjdMEDbRS6Izz9b4/F/fOnbkzF2jhLCa595zze855P84d2Kdp9ciL+80J9gWolufx+lPV8vwTQ7Q2F2ltLsq8u3F0AgWfxU+2pG+fezrj35gpDuf0zHIhK5WrwAfAErKfMT8Ndg54aSDsD9BlFPyG6RhwHvG1naydHdYL8xvUP2BlYAlTtpb+41Gwy7E/sYC/89TyIbJCqivgvqAhaCmBiG7d8BLRyyFWHMjLsZE90RcUMM4AsegdDzuCZgKIxSiUhKvD7nKbTs31HGekUc3MC23MFHmhfBV4hZagDrQFTsN5WMGIDhrhuNH4vktn0wO8SrVyRRszxUwsgFbL7+ODBdApYAoBdz3UBd28BUiK6kJrS3R3hGt5Jt4tYSUANsGug67Zido3cSfepkELwBQAuwLHQwEAFsZlFg7GwOZPnZ6rDFpANp0ul52oXQQuptku2eg9mAWGRQYG3Tt+0LVkJ/+6lEIS4U+I649/M/EPMZ8UY+Ca9A5HF6dPeyEpxN7a3AZtIaC9N305kBLhpCjFuVux3hBEK1OTYJMY8Ynag7lm0kxy+szobfykvis/OwLB7AIQX6ZS7rTJdiFwyb75RiLWzwsJ7UIGopXKx8jOpQpjj4Z0doQ8yIOrx2sVHsqMn0XdOLLY78T0C7LPgRoA4wZhPkge2v8K3wIEnW2PBBYZB15Ph3ANdA3TrzA0hbUxU2T33iXgQ9rALZeOEnXBNYVrxEslLzrbwreFGYy9USScMjCuEBw+b8fX00szUq5EwGrlB8Qx3ROdmw7v6cM6ovsf+HrSQWiMzUYxAH7kzdqsWfYCjAwzMzyerwBswoheC1EAnbue5i1H67bH1T1ByShVAp55r9gDAPpyGAAPGvUm12vSIjhwvB+mlrAHnT6Re/bzv/Gyw0AN2SKBvYP4CPgdGATcxDgb+20RqIE9n1tzLmM57tBO90eklg+NM/bUdcQssE6jecpO395N/WtzEffXNZjzWKZqeV4rFalaefuJhB4Jeoz/Xf8D+ZhvZAkTU4AAAAAASUVORK5CYII=");
+  display: grid;
+  height: 25px;
   position: absolute;
   top: 1px;
   left: 1px;
-  display: grid;
-  place-content: center;
   line-height: 0;
+  place-content: center;
   transition: background-color 1s, transform 1s ease-in;
+  width: 26px;
 }
 
-#darklight:checked + .dlthemebtn::after{
+#darklight:checked+.dlthemebtn::after {
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAB/0lEQVRIib3Wv2sTcRjH8fenplFDRXPRoWpBcNCCOAgOIuooSOPgEI6ioGsdBQeLqKWLm6tQU5BiE8EuOhQXEcQ/QeggBEGtShLUVjRJ73G4puTHJbn80Gf8fp97Xt/n7rnj4D+EOiXY05F9eNEJ4CziAOAA68AK4oFShXc9I7bojCFmEFeAbTVbq6BZYtvnlfz0q3MfEAk+fXwSYw7Y2bC1zHD5si79zIcpXo2mTiybuAU227QnXjJSuKgL/OkGaEL8DrQQgK+i0nGl1r51CwAMbQGLzhimuQAAjPu9AnUIYobmZwBQpkK6V8AvzeaYWvQz9VNUzXirVOF0P4jfiUWTgQCAp1w/QA3CmZYZ8iqDQfw3uZUyOhgES7TJOWkPGR4AonZv8B52x8/3jxgf22aJe3a3Ztx7Qob0un2aTnDUudMfUim9ADbaO9y2rHMjbGHLJMarz3LrE2JZJw1c63i1WMLbuCn3+/vA4vOHdhD7cR3TYbn5qXrkmXOQCitALMRBy4hXGMtIOTzvN9IocApIAjFkx5QqfqhD/BbjLtKTxvUuwzBdlZt/XF2omxi5xQxoGrDeDU3XAtDixJsdPSLcravGOqapRgAInn25xQwRjgBpoNO3qwRawGM8CIAwfytLuxKUoxNg54D9wF7QGlgO4w1e5Lkmv37pVOefx1+OZJb8B6gweQAAAABJRU5ErkJggg==");
   background-color: #1f257f;
   transform: translateX(35px) rotate(360deg);
@@ -177,8 +180,10 @@ a{
   color: white;
 }
 
+/* ------------------------------------------------------------------ */
+
 /* My Name */
-.formateTxt{
+.formateTxt {
   color: #ff016b;
   font-family: 'Pacifico', cursive;
   font-size: 6rem;
@@ -188,7 +193,7 @@ a{
   text-shadow: 0px 2px #ffffff;
 }
 
-.preTypewrite{
+.preTypewrite {
   color: #00fff3;
   font-family: 'Dongle', sans-serif;
   font-size: 2.6rem;
@@ -199,7 +204,7 @@ a{
 }
 
 /* Developer,trader.....etc */
-.typeWrite{
+.typeWrite {
   color: #00fff3;
   font-family: 'Dongle', sans-serif;
   font-size: 2.6rem;
@@ -209,14 +214,17 @@ a{
   text-shadow: 0px 0px #ffffff;
 }
 
-/* headings */
+/* ------------------------------------------------ */
+
+/* Headings of Section and line */
 .lne {
   font-family: 'Dongle', sans-serif;
-  font-size:4rem;
+  font-size: 4rem;
   overflow: hidden;
   text-align: center;
   margin-top: 5vh;
 }
+
 .lne:before,
 .lne:after {
   background-color: #000;
@@ -227,17 +235,22 @@ a{
   vertical-align: middle;
   width: 5%;
 }
+
 .lne:before {
   right: 0.2em;
   margin-left: -50%;
 }
+
 .lne:after {
   left: 0.2em;
   margin-right: -50%;
 }
 
+/* ------------------------------------------------------------ */
+
+/* About Me */
 /* MyImage */
-.myimg{
+.myimg {
   float: left;
   border-radius: 25px;
   box-shadow: -11px 11px 4px -1px #00000052;
@@ -247,16 +260,17 @@ a{
   display: block;
 }
 
-.myDesc{
+.myDesc {
   padding-left: 20rem;
 }
 
-.facss{
+.facss {
   color: #3300d1;
   padding-right: 7px;
 }
 
-.listStyling{
+/* my details in list */
+.listStyling {
   list-style-type: none;
   padding-left: 22rem;
   font-weight: 500;
@@ -302,17 +316,17 @@ a{
   transform: rotateY(180deg);
 }
 
-.educ{
+.educ {
   font-family: 'Fredoka One', cursive;
   margin-top: -7px;
 }
 
-.educdesc{
+.educdesc {
   font-family: 'Rubik', sans-serif;
   text-align: left;
 }
 
-.educdescBack{
+.educdescBack {
   font-family: 'Rubik', sans-serif;
   text-align: left;
   margin-top: 15px;
@@ -321,27 +335,43 @@ a{
   text-align: left;
 }
 
-.edu{
+.edu {
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 2;
 }
 
-.clgName{
+.clgName {
   font-size: 1.0rem;
 }
 
-.fontAdjBack{
-  font-size: 0.8rem;
+.yrsAdj {
   font-style: italic;
+  font-size: 0.9rem;
+  padding-top: 3vh;
+  white-space: nowrap;
+  font-size: 0.7rem;
 }
 
-.lineAdj{
-  line-height: 3rem;
+.schlAdj {
+  float: right;
+  text-align: right;
+  margin-top: -5vh;
 }
+
+.clgStyle {
+  font-size: 1.2rem;
+}
+
+.clgDG {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+/* -------------------------------------------------------- */
 
 /* Skills */
-.cardbg{
+.cardbg {
   background: #ffb0db;
   border-radius: 3px;
   z-index: 10;
@@ -353,47 +383,106 @@ a{
   padding: 1em;
 }
 
-.cdeffect{
+.cdeffect {
   transition: 0.3s;
   overflow: hidden;
   width: 350px;
   height: 260px;
+  margin: auto;
 }
 
-.cdeffect:hover{
+.cdeffect:hover {
   transform: scale(1.1);
 }
 
-.cdeffect::after{
+.cdeffect::after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   width: 530px;
   height: 45px;
-  transform: rotate(-40deg) translateY( -100px);
+  transform: rotate(-40deg) translateY(-100px);
   background: linear-gradient(to right, #000000, #000000);
-  }
+}
 
-.cdeffect:hover::after{
+.cdeffect:hover::after {
   animation: border-effect 2s ease;
-  }
-  @keyframes border-effect {
-  0%{transform: rotate(-40deg) translateY(-100px);}
-  100%{transform: rotate(-40deg) translateY(500px);}
+}
+
+@keyframes border-effect {
+  0% {
+    transform: rotate(-40deg) translateY(-100px);
   }
 
-  /* card title */
-.cdtitle{
+  100% {
+    transform: rotate(-40deg) translateY(500px);
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+/* Project */
+
+
+.cardLeft{
+  box-shadow: -12px 13px 1px 0px rgb(0 0 0 / 20%);
+  margin-right: 5px;
+  color: #000000;
+  background: #d070ff;
+}
+
+.cardRight{
+  box-shadow: 12px 13px 1px 0px rgb(0 0 0 / 20%);
+  margin-left: 5px;
+  color: #000000;
+  background: #d070ff;
+}
+
+.projName{
   font-family: 'Fredoka One', cursive;
-  text-align:center;
+}
+
+.projDetails{
+  font-family: 'Rubik', sans-serif;
+}
+
+.viewSrc{
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  height: 2em;
+  width: 10em;
+}
+
+#projA{
+  color: #000000;
+}
+
+#projA:hover{
+  color: #000000;
+}
+
+.imgProj{
+  padding: 5px 0px;
+  height:100%;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+/* Certificate */
+/* card title */
+.cdtitle {
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
   line-height: 2vw;
   font-size: 1.7rem;
   margin-bottom: 1.2rem;
   margin-top: 0.3rem;
 }
 
-.cddesc{
+.cddesc {
   font-family: 'Rubik', sans-serif;
   text-align: center;
   line-height: 1.7rem;
@@ -401,24 +490,24 @@ a{
 }
 
 .cefcard-container {
-	overflow-x: scroll;
-	display: flex;
-	padding: 3rem;
+  overflow-x: scroll;
+  display: flex;
+  padding: 3rem;
 }
 
 .card_cef {
-	min-width: 280px;
-	height: 420px;
-	border-radius: 16px;
-	background-color: #cc8bfc;
-	box-shadow: -1rem 0 2rem #000000b0;
-	display: flex;
-	flex-direction: column;
-	padding: 1.5rem;
-	transition: 0.2s;
+  min-width: 280px;
+  height: 420px;
+  border-radius: 16px;
+  background-color: #cc8bfc;
+  box-shadow: -1rem 0 2rem #000000b0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: 0.2s;
 }
 
-.cef_img{
+.cef_img {
   width: 16rem;
   height: 10rem;
   margin-left: -0.5rem;
@@ -426,21 +515,21 @@ a{
 }
 
 .tags {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 1rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0 1rem;
 }
 
 .card_cef .article-title {
   font-family: 'Dongle', sans-serif;
-	margin-top: 0.5rem;
-	font-size: 30px;
-	font-weight: 700;
+  margin-top: 0.5rem;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .card_cef .article-header {
   margin-top: 0.3rem;
-	margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 .caption {
@@ -451,260 +540,86 @@ a{
   font-size: 19px;
 }
 
-.cef-id{
+.cef-id {
   font-size: 12px;
   margin-top: 2.5rem;
   margin-left: 0.5rem;
 }
 
-.cef_btn1{
-	text-align: center;
-	border-width: 5rem;
-	border: solid 2px #000;
-	border-radius: 2rem;
-	width: 8rem;
+.cef_btn1 {
+  text-align: center;
+  border-width: 5rem;
+  border: solid 2px #000;
+  border-radius: 2rem;
+  width: 8rem;
 }
 
-.cef_btn2{
-	margin-top:0.5rem;
-	text-align: center;
-	border-width: 5rem;
-	border: solid 2px #000;
-	border-radius: 2rem;
-	width: 12rem;
+.cef_btn2 {
+  margin-top: 0.5rem;
+  text-align: center;
+  border-width: 5rem;
+  border: solid 2px #000;
+  border-radius: 2rem;
+  width: 12rem;
   color: #002bff;
+  font-weight: 500;
 }
-
 
 .card_cef:not(:first-child) {
-	margin-left: -110px;
+  margin-left: -110px;
 }
 
 .card_cef:hover {
-	transform: translateY(-1rem);
+  transform: translateY(-1rem);
 }
 
-.card_cef:hover~.card_cef{
-	transform: translateX(110px);
+.card_cef:hover~.card_cef {
+  transform: translateX(110px);
 }
 
-@media (max-width: 1000px){
-  .marginLeft{
-    margin-left: 0%;
-  }
+/* -------------------------------------------- */
 
-  .formateTxt{
-    color: #ff016b;
-    font-size: 5rem;
-    top: 30vh;
-    text-shadow: 0px 2px #ffffff;
-  }
-
-  .preTypewrite{
-    font-size: 2.6rem;
-    position: absolute;
-    padding-top: 0.3em;
-    padding-left: 1.0em;
-    text-shadow: 0px 0px #ffffff;
-  }
-  
-  .typeWrite{
-    font-size: 2.6rem;
-    position: absolute;
-    padding-top: 0.3em;
-    padding-left: 2.4em;
-    text-shadow: 0px 0px #ffffff;
-  }
-
-  .myimg{
-    height: 40vw;
-    float: none;
-    border-radius: 80px; 
-    width: 40vw;
-    margin: auto;
-    display: block;
-  }
-
-  .myDesc{
-    padding-left: 0rem;
-  }
-
-  .listStyling{
-    list-style-type: none;
-    padding-left: 0rem;
-  }  
-
-  .flip-card {
-    height: 30vh;
-  }
-
-  .edu {
-    font-size: 1rem;
-}
-
-  .educdescBack{
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: left;
-  }
-
-  .clgName{
-    font-size: 0.8rem;
-    display: table-caption;
-  }
-
-  .clgStyle{
-    font-size: 0.8rem;
-  }
-
-  .clgDate{
-    font-size: 0.7rem;
-  }
-
-  .clgGrade{
-    font-size: 0.7rem;
-    font-style: italic;
-    float: right;
-    margin-top: -15px;
-  }
-
-  .cn2{
-    margin-top: -6em;
-    width: min-content;
-  }
-
-  .fontAdjBack{
-    font-size: 0.5rem;
-  }
-
-  .lineAdj{
-    line-height: 0rem;
-  }
-
-  .cdeffect {
-    width: 310px;
-    height: 205px;
-    left: 10px;
-  }
-
-  .cardbg {
-    top: 2px;
-    left: 2px;
-    width: 304px;
-    height: 199px
-  }
-
-  .cdtitle {
-    font-size: 1.3rem;
-  }
-  
-  .cddesc {
-    line-height: 1.4rem;
-    }
-
-    .crdHeight{
-      margin-top: 1rem!important;
-    }
-
-    .alignicon{
-    font-size:2.5vw;
-    white-space: nowrap;
-    }
-
-}
 /* Contact */
-
-.bgcontact{
-	background: -webkit-linear-gradient(100deg, hsla(278, 100%, 47%, 1) 0%, hsla(314, 100%, 49%, 1) 38%, hsla(337, 100%, 76%, 1) 53%, hsla(260, 100%, 42%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9900F0", endColorstr="#F900BF", GradientType=1 );
+.bgcontact {
+  background: -webkit-linear-gradient(100deg, hsla(278, 100%, 47%, 1) 0%, hsla(314, 100%, 49%, 1) 38%, hsla(337, 100%, 76%, 1) 53%, hsla(260, 100%, 42%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9900F0", endColorstr="#F900BF", GradientType=1);
 }
 
-.contactcls{
+.contactcls {
   text-align: center;
   padding-top: 10px;
   font-family: 'Dongle', sans-serif;
-  font-size:60px;  
-  color:white;
-  text-shadow:4px 3px #000000;
+  font-size: 60px;
+  color: white;
+  text-shadow: 4px 3px #000000;
 }
 
-#icon a{
+#icon a {
   color: #000000;
 }
 
-.alignicon{
+.alignicon {
   line-height: 2.5em;
-  text-align: center; 
+  text-align: center;
 }
 
 .product {
   -webkit-box-reflect: below -5px linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 40%));
 }
 
-.growicon:hover{
+.growicon:hover {
   transform: scale(1.2);
 }
 
-.copyright{
+.copyright {
   font-family: 'Bree Serif', serif;
   font-size: 15px;
   font-weight: bolder;
 }
 
-.hiringbox{
-  padding: 0px;
-  margin: 0px;
-  position: fixed;
-  right: -51px;
-  top: 27rem;
-  width: 155px;
-  z-index: 1100;
-}
+/* ------------------------------------------------------------------------ */
 
-.hbox{
-  list-style-type: none;
-  background-color: #004eff8c;
-  color: #000000;
-  height: 45px;
-  padding: 0px;
-  margin: 0px 0px 1px 0px;
-  transition: all 0.25s ease-in-out;
-  cursor: pointer;
-  border-radius: 15px;
-}
-
-#hbox_id {
-  display: none;
-}
-
-.txt_resm{
-  font-family: 'Dongle', sans-serif;
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 3px #ffffff;
-  font-size: 35px;
-  margin-left: 0.5rem;
-}
-
-.resm_fix{
-  position: fixed;
-  font-size: 20px;
-  white-space: nowrap;
-  margin-top: 0.5rem;
-  margin-left: 0.8rem;
-  border: solid 2px black;
-  border-radius: 15px;
-  width: 8rem;
-  height: 1.9rem;
-  text-align: center;
-  background-color: antiquewhite;
-}
-
-.hbox:hover{
-  margin-left:-150px;
-}
-
-/* back to to button */
+/* Back to to button */
 #btn-back-to-top {
   position: fixed;
   display: none;
@@ -721,4 +636,218 @@ a{
   margin-right: 2vw;
   box-shadow: 0px 7px 4px #00000057;
   z-index: 100;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Hiring box for mobile */
+.hiringMob {
+  text-align: center;
+  display: none;
+  margin-top: 1rem;
+}
+
+/* ----------------------------------------------------- */
+
+/* Hiring box for laptop */
+.hiringbox {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -51px;
+  top: 27rem;
+  width: 155px;
+  z-index: 1100;
+}
+
+.hbox {
+  list-style-type: none;
+  background-color: #004cffb7;
+  color: #000000;
+  height: 45px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#hbox_id {
+  display: none;
+}
+
+.txt_resm {
+  font-family: 'Dongle', sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 3px #ffffff;
+  font-size: 35px;
+  margin-left: 0.5rem;
+}
+
+.resm_fix {
+  position: fixed;
+  font-size: 20px;
+  white-space: nowrap;
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+  border: solid 2px black;
+  border-radius: 15px;
+  width: 8rem;
+  height: 1.9rem;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.hbox:hover {
+  margin-left: -150px;
+}
+
+/* ----------------------------------------------------------- */
+
+
+
+
+/* If screen is resize to 1000px the above code will get manipulated by below code (i.e for mobile view) */
+@media (max-width: 1000px) {
+
+  /* Other title of navbar to adjust */
+  .marginLeft {
+    margin-left: 0%;
+  }
+
+  /* My name */
+  .formateTxt {
+    font-size: 5rem;
+    top: 30vh;
+  }
+
+  .preTypewrite {
+    font-size: 2.6rem;
+    position: absolute;
+    padding-top: 0.3em;
+    padding-left: 1.0em;
+    text-shadow: 0px 0px #ffffff;
+  }
+
+  .typeWrite {
+    font-size: 2.6rem;
+    position: absolute;
+    padding-top: 0.3em;
+    padding-left: 2.4em;
+    text-shadow: 0px 0px #ffffff;
+  }
+
+  /* My Image */
+  .myimg {
+    height: 40vw;
+    float: none;
+    border-radius: 80px;
+    width: 40vw;
+    margin: auto;
+    display: block;
+  }
+
+  .myDesc {
+    padding-left: 0rem;
+  }
+
+  /* My details in list */
+  .listStyling {
+    list-style-type: none;
+    padding-left: 0rem;
+  }
+
+  /* Education card */
+  .flip-card {
+    height: 30vh;
+  }
+
+  .edu {
+    font-size: 1rem;
+  }
+
+  .educdescBack {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+  }
+
+  .clgName {
+    font-size: 0.9rem;
+    display: table-caption;
+  }
+
+  .clgStyle {
+    font-size: 0.9rem;
+  }
+
+  .cn2 {
+    margin-top: -10em;
+    width: min-content;
+  }
+
+  /* Skills card */
+  .cdeffect {
+    width: 310px;
+    height: 205px;
+  }
+
+  .cardbg {
+    top: 2px;
+    left: 2px;
+    width: 304px;
+    height: 199px
+  }
+
+  .cdtitle {
+    font-size: 1.3rem;
+  }
+
+  .cddesc {
+    line-height: 1.4rem;
+  }
+
+  .crdHeight {
+    margin-top: 1rem !important;
+  }
+
+  .alignicon {
+    font-size: 2.5vw;
+    white-space: nowrap;
+  }
+
+  .clgDG {
+    font-size: 0.7rem;
+  }
+
+  /* hiring box manipulation */
+  .hiringbox {
+    display: none;
+  }
+
+  .hiringMob {
+    display: block !important;
+    font-family: 'Fredoka One', cursive;
+  }
+
+  .resmBtnMob {
+    border: solid 2px black;
+    border-radius: 15px;
+    width: 10rem;
+    height: 2rem;
+    text-align: center;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    font-size: 1.0rem;
+    font-weight: 200;
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .cardRight, .cardLeft{
+    margin: 0px 0px;
+    box-shadow: 0px 13px 1px 0px rgb(0 0 0 / 20%)!important;
+  }
 }
