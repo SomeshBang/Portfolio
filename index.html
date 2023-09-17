@@ -244,7 +244,7 @@
     <section id="project">
         <h1 class="lne"> My Work </h1>
 
-        <div class="container">
+        <div class="container" style="max-width: 1115px;">
             <div class="row" style="margin: auto;">
 
                 <div class="card mb-3 mt-3 cardLeft" style="max-width: 540px;">
