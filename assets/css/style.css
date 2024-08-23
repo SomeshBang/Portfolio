@@ -45,7 +45,8 @@ html {
 
 /* Body background Decoration */
 .bodyDesign {
-  background-image: linear-gradient(to bottom right, #00e9ff78, #cc00ff73, #0800ff73);
+  /*background-image: linear-gradient(to bottom right, #00e9ff78, #cc00ff73, #0800ff73);*/
+  background-color: #f4f4f4;
 }
 
 /* Background Image */
